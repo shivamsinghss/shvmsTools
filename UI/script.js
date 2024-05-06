@@ -1,7 +1,7 @@
 // Function to handle redirection based on cURL response
 async function redirectWithCurl(longUrl) {
     
-    const response = await fetch('http://localhost:8080/shorten', {
+    const response = await fetch('https://shivamsinghss.github.io/shvmsTools/UI/shorten', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -10,7 +10,7 @@ async function redirectWithCurl(longUrl) {
     });
     const responseData = await response.text(); // Read the response as text
     if (responseData.trim() !== '') {
-        const shortenedUrl = `http://localhost:8080/redirect?shortUrl=${responseData.trim()}`;
+        const shortenedUrl = `https://shivamsinghss.github.io/shvmsTools/UI/redirect?shortUrl=${responseData.trim()}`;
         prompt('shortened URL:', shortenedUrl);
         window.location.href = shortenedUrl;
     } else {
