@@ -13,7 +13,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 @RestController
-@CrossOrigin("*")
+@CrossOrigin(origins = "https://shivamsinghss.github.io")
 public class UrlShortenerController {
 
     @Autowired
