@@ -13,7 +13,8 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 
 @RestController
-@CrossOrigin(origins = "https://shivamsinghss.github.io")
+@CrossOrigin(origins = "*")
+
 public class UrlShortenerController {
 
     @Autowired
@@ -22,7 +23,7 @@ public class UrlShortenerController {
     @Autowired
     private UrlMappingRepository urlMappingRepository;
 
-    @PostMapping("shorten")
+    @PostMapping("/shorten")
     public String shortenUrl(@RequestBody String originalUrl) {
         String encodedUrl = URLEncoder.encode(originalUrl, StandardCharsets.UTF_8);
         UrlMappingEntity existingUrl = urlMappingRepository.findByOriginalUrl(originalUrl);
