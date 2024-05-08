@@ -22,7 +22,7 @@ public class UrlShortenerController {
     @Autowired
     private UrlMappingRepository urlMappingRepository;
 
-    @PostMapping("/shorten")
+    @PostMapping("shvmsTools/UI/shorten")
     public String shortenUrl(@RequestBody String originalUrl) {
         String encodedUrl = URLEncoder.encode(originalUrl, StandardCharsets.UTF_8);
         UrlMappingEntity existingUrl = urlMappingRepository.findByOriginalUrl(originalUrl);
