@@ -28,23 +28,3 @@ document.getElementById('shortenForm').addEventListener('submit', async function
     redirectWithCurl(longUrl);
 });
 
-// document.getElementById('shortenForm').addEventListener('submit', async function() {
-//     try {
-//         const response = await fetch('http://localhost:8080/shorten', {
-//             method: 'POST', // or 'POST' if you're sending data
-//             headers: {
-//                 'Content-Type': 'application/json',
-//                 // Add any additional headers required by the API
-//             },
-//             // If you're sending data, include a body property with JSON.stringify(data)
-//             // body: JSON.stringify({ key: 'value' })
-//         });
-//         const data = await response.json(); // Assuming the API returns JSON data
-//         console.log('API Response:', data);
-//         // Process the API response as needed
-//     } catch (error) {
-//         console.error('Error:', error);
-//         // Handle errors, such as network issues or server errors
-//         alert('Error: Failed to fetch data from API');
-//     }
-// });
