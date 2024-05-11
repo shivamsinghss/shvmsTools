@@ -8,8 +8,9 @@ import org.springframework.context.annotation.ComponentScan;
 @ComponentScan(basePackages = {"com.example.shvmstools", "com.example.shvmstools.config"})
 public class ShvmsToolsApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ShvmsToolsApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(ShvmsToolsApplication.class, args);
+		System.out.println(":::::::::::::::ShvmsToolsApplication started:::::::::::::::");
+    }
 
 }
