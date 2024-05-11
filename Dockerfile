@@ -1,3 +1,5 @@
-FROM eclipse-temurin:17-jdk-alpine
-COPY build/libs/shvmsTools-0.0.1-SNAPSHOT.jar /app.jar
+FROM openjdk:17-oracle
+ARG JAR_FILE=build/libs/*.jar
+COPY ${JAR_FILE} app.jar
+ENV TZ=Asia/kolkata
 ENTRYPOINT ["java", "-jar", "/app.jar"]
