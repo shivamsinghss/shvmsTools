@@ -5,11 +5,12 @@ import com.example.shvmstools.Entity.UrlMappingEntity;
 import com.example.shvmstools.Repository.UrlMappingRepository;
 import com.example.shvmstools.Service.UrlShortenerService;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import java.net.URLEncoder;
+
+import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.net.URLEncoder;
 import java.nio.charset.StandardCharsets;
 
 @RestController

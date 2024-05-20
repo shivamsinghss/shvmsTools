@@ -1,8 +1,7 @@
 package com.example.shvmstools.Entity;
 
-import jakarta.persistence.*;
 
-import java.time.LocalDateTime;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "url_mapping")
