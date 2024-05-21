@@ -10,7 +10,7 @@ async function redirectWithCurl(longUrl) {
     });
     const responseData = await response.text(); // Read the response as text
     if (responseData.trim() !== '') {
-        const shortenedUrl = `https://shivamsinghss.github.io/shvmsTools/UI/redirect?shortUrl=${responseData.trim()}`;
+        const shortenedUrl = `https://shvmstools.onrender.com/redirect?shortUrl=${responseData.trim()}`;
         prompt('shortened URL:', shortenedUrl);
         window.location.href = shortenedUrl;
     } else {
