@@ -49,5 +49,11 @@ public void redirect(@RequestParam("shortUrl") String shortUrlParam, HttpServlet
     }
 }
 
+    @GetMapping("/test")
+    public String test() throws IOException {
+       return "hi... from shvmsTools:::::made by shivam";
+    }
+
+
 }
 
