@@ -1,7 +1,7 @@
 // Function to handle redirection based on cURL response
 async function redirectWithCurl(longUrl) {
     
-    const response = await fetch('https://shivamsinghss.github.io/shorten', {
+    const response = await fetch('https://shvmstools.onrender.com/shorten', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
