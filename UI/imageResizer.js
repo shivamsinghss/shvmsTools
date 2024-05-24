@@ -17,7 +17,7 @@ document.getElementById('upload-form').addEventListener('submit', async function
     formData.append('percentage', percentage);
 
     try {
-        const response = await fetch('http://localhost:8080/compress', { 
+        const response = await fetch('https://shvmstools.onrender.com/compress', {
             method: 'POST',
             body: formData
         });
