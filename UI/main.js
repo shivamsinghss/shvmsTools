@@ -26,6 +26,10 @@ function redirectToPageUrlShortner() {
     window.location.href = 'URLShortner.html';
 }
 
+function redirectToPageImageCompressor() {
+    window.location.href = 'imageResizer.html';
+}
+
 nextButton.addEventListener('click', goToNextDiv);
 prevButton.addEventListener('click', goToPrevDiv);
 
