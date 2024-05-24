@@ -21,6 +21,7 @@ public class ImageCompressionController {
     @Autowired
     private ImageCompressionService compressionService;
 
+
     @PostMapping("/compress")
     public ResponseEntity<byte[]> compressImage(@RequestParam("file") MultipartFile file,
                                                 @RequestParam("percentage") int compressionPercentage) {
