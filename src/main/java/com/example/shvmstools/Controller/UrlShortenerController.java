@@ -1,8 +1,9 @@
+/*
 package com.example.shvmstools.Controller;
 
 import com.example.shvmstools.Dto.OriginalUrlResponse;
 import com.example.shvmstools.Entity.UrlMappingEntity;
-import com.example.shvmstools.Repository.UrlMappingRepository;
+//import com.example.shvmstools.Repository.UrlMappingRepository;
 import com.example.shvmstools.Service.UrlShortenerService;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -58,3 +59,4 @@ public void redirect(@RequestParam("shortUrl") String shortUrlParam, HttpServlet
 
 }
 
+*/

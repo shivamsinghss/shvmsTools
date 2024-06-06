@@ -1,3 +1,4 @@
+/*
 package com.example.shvmstools.Entity;
 
 
@@ -61,3 +62,4 @@ public class UrlMappingEntity {
                 '}';
     }
 }
+*/
