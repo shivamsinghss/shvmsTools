@@ -11,7 +11,7 @@ document.getElementById('upload-form').addEventListener('submit', async function
     formData.append('image', imageFile);
 
     try {
-        const response = await fetch('http://localhost:8080/convertPNG', {
+        const response = await fetch('https://shvmstools.onrender.com/convertPNG', {
             method: 'POST',
             body: formData
         });
