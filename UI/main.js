@@ -25,9 +25,15 @@ function updateDivPositions() {
 function redirectToPageUrlShortner() {
     window.location.href = 'URLShortner.html';
 }
-
 function redirectToPageImageCompressor() {
     window.location.href = 'imageResizer.html';
+}
+
+function redirectToImageToPngConverter() {
+    window.location.href = 'pngconverter.html';
+}
+function redirectToImageToJpegConverter() {
+    window.location.href = 'jpegconverter.html';
 }
 
 nextButton.addEventListener('click', goToNextDiv);

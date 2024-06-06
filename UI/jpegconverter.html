@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image to PNG Converter - shvmsTools</title>
+    <link rel="stylesheet" href="jpegconverter.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <div class="card">
+        <h1>Image to JPEG Converter</h1>
+        <form id="upload-form">
+            <input type="file" id="imageFile" accept="image/*" required>
+            <button type="submit">Convert</button>
+        </form>
+        <div id="result" class="hidden">
+            <h2>Converted Image</h2>
+            <img id="convertedImage" src="" alt="Converted Image">
+            <a id="downloadLink" href="" download="converted-shvmsTools.jpeg">Download Image</a>
+        </div>
+    </div>
+</div>
+<script src="jpegconverter.js"></script>
+</body>
+</html>

@@ -18,18 +18,19 @@ body, html {
 #container {
   display: flex;
   overflow: hidden;
-  width: 1200px;
+  width: 1250px;
   height: 400px;
   position: relative;
-  border: 1px solid #ccc;
+  border: 3px solid #ffffff;
+  border-radius: 40px;
 }
 
 .inner-div {
   min-width: 1200px;
   height: 600px;
-  background-color: #e0e0e0;
+  background-color: #ffffff;
   border-radius: 10px;
-  padding: 20px;
+  padding: 30px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: center;
@@ -37,17 +38,37 @@ body, html {
   position: absolute;
   transition: transform 0.5s ease-in-out;
 }
+
 .url-shortner-div {
-  background-image: url('https://www.designgurus.io/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fdownload%2Fstorage%2Fv1%2Fb%2Fdesigngurus-prod.appspot.com%2Fo%2Fblog%252F63f7bfe24890332fa0e7bc49%252Fimg%3Aac144d-e0eb-bdf4-4810-38bbad0b28d.png%3Fgeneration%3D1677180899952700%26alt%3Dmedia&w=3840&q=75'); 
+  background-image: url('https://www.designgurus.io/_next/image?url=https%3A%2F%2Fstorage.googleapis.com%2Fdownload%2Fstorage%2Fv1%2Fb%2Fdesigngurus-prod.appspot.com%2Fo%2Fblog%252F63f7bfe24890332fa0e7bc49%252Fimg%3Aac144d-e0eb-bdf4-4810-38bbad0b28d.png%3Fgeneration%3D1677180899952700%26alt%3Dmedia&w=3840&q=75'); /* Change this to your desired image URL */
   background-size: cover;
-  background-position:32cm 33cm;
+  background-position: center;
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
 }
 
 .imageResizer-div {
-  background-image: url("https://www.techsmith.com/blog/wp-content/uploads/2022/03/resize-image.png");
+  /* background-image: url("https://www.techsmith.com/blog/wp-content/uploads/2022/03/resize-image.png");
   background-size:cover;
+  background-repeat: no-repeat; */
+  background-color: #ddadd1;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: transform 0.7s ease-in-out;
+}
+
+
+.pngconverter-div {
+  /* background-image: url("https://img.icons8.com/?size=100&id=e8LSEtM3jsBL&format=png&color=000000");
+  background-size:contain; */
+  background-color: #cfa8c5;
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
@@ -59,12 +80,40 @@ body, html {
   position: absolute;
   transition: transform 0.7s ease-in-out;
 }
+
+.jpegconverter-div {
+  /* background-image: url("https://img.icons8.com/?size=100&id=e8LSEtM3jsBL&format=png&color=000000");
+  background-size:contain; */
+  background-color: #cfa8c5;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: transform 0.7s ease-in-out;
+}
+.previewBox {
+  font-family: Poetsen One;
+  padding-bottom: 100px;
+  font-size: 120px;
+  font-style: normal;
+  font-weight: bold;
+  color: #0F16AE;
+  text-shadow: 0px 0px 0 rgb(255, 143, 2), -1px 1px 0 rgb(255, 143, 2), -2px 2px 0 rgb(255, 143, 2), -3px 3px 0 rgb(255, 143, 2), -4px 4px 0 rgb(255, 143, 2),
+  -5px 5px 0 rgb(255, 143, 2), -6px 6px 5px rgba(0, 0, 0, 1), -6px 6px 1px rgba(0, 0, 0, 0.5), 0px 0px 5px rgba(0, 0, 0, .2);
+}
+
+
 .nav-button {
   position: absolute;
-  top: 50%;
+  top: 70%;
   transform: translateY(-50%);
   background-color: rgba(254, 253, 253, 0.5);
-  color: hwb(0 91% 5%);
+  color: hwb(0 100% 0%);
   border: none;
   border-radius: 5px;
   padding: 10px 20px;
@@ -72,24 +121,23 @@ body, html {
 }
 
 #prevButton {
-  left: 10px;
+  left: 30px;
 }
 
 #nextButton {
-  right: 10px;
+  right: 50px;
 }
 
 .myButton {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 40%;
   bottom: 40px;
   padding: 20px 40px;
   font-size: 16px;
   background-color: #f86858;
   color: #fff;
   border: none;
-  border-radius: 5px; 
+  border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -102,48 +150,48 @@ body, html {
   0% {
     color: hsl(230, 40%, 80%);
     text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+            0 0 1em hsla(320, 100%, 50%, 0.2),
+            0 0 0.125em hsla(320, 100%, 60%, 0.3),
+            -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
   }
-  
-  30% { 
+
+  30% {
     color: hsl(230, 80%, 90%);
     text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 60%, 0.5),
+            -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
   }
-  
-  40% { 
+
+  40% {
     color: hsl(230, 100%, 95%);
     text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 90%, 0.5),
-      -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
-      0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 90%, 0.5),
+            -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+            0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
   }
-  
+
   70% {
     color: hsl(230, 80%, 90%);
     text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.5),
-      0 0 0.125em hsla(320, 100%, 60%, 0.5),
-      0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
-      -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+            0 0 1em hsla(320, 100%, 50%, 0.5),
+            0 0 0.125em hsla(320, 100%, 60%, 0.5),
+            0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
   }
-  
+
   100% {
     color: hsl(230, 40%, 80%);
     text-shadow:
-      0 0 1em hsla(320, 100%, 50%, 0.2),
-      0 0 0.125em hsla(320, 100%, 60%, 0.3),
-      1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
-      -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+            0 0 1em hsla(320, 100%, 50%, 0.2),
+            0 0 0.125em hsla(320, 100%, 60%, 0.3),
+            1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
   }
-  
+
 }
 
 
@@ -157,36 +205,36 @@ h2 {
 @import url('https://fonts.googleapis.com/css?family=Codystar:300&display=swap');
 
 body {
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   font-family: 'Codystar';
-   background: black;
-   background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Codystar';
+  background: black;
+  background-image: url('data:image/svg+xml,%3Csvg width="42" height="44" viewBox="0 0 42 44" xmlns="http://www.w3.org/2000/svg"%3E%3Cg id="Page-1" fill="none" fill-rule="evenodd"%3E%3Cg id="brick-wall" fill="%239C92AC" fill-opacity="0.4"%3E%3Cpath d="M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');
 }
 
 .neons {
-   margin-top: 0rem;
-   text-align: center;
+  margin-top: 0rem;
+  text-align: center;
 }
 
 .neons h1 {
   font-size: 6rem;
   text-align: center;
-   font-weight: bold;
+  font-weight: bold;
   -webkit-animation: glow 2s ease-in-out infinite alternate;
   -moz-animation: glow 2s ease-in-out infinite alternate;
   animation: glow 2s ease-in-out infinite alternate;
 }
 
 @-webkit-keyframes glow {
-     from {
-      color: #fff;
+  from {
+    color: #fff;
     text-shadow: 0 0 10px #d189cb, 0 0 20px #ae70b0, 0 0 30px #a34897, 0 0 40px #ae2795, 0 0 50px #a41a84, 0 0 60px #ad159e, 0 0 70px #9d1574, 0 0 90px #ae0497;
   }
-  
+
   to {
-     color: gray;
+    color: gray;
     text-shadow: 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2, 0 0 80px #00fff2, 0 1 90px #00fff2;
   }
 }

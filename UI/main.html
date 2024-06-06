@@ -3,31 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Circular Div Carousel</title>
+    <title>shvmsTools</title>
     <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Poetsen One" rel="stylesheet">
 </head>
 <body>
-    <div id="all">
-        <div class="container">
-            <div class="row">
-               <div class="neons col-12">
-                  <h1><em>shvmsTools</em></h1>
-               </div>
+<div id="all">
+    <div class="container">
+        <div class="row">
+            <div class="neons col-12">
+                <h1><em>shvmsTools</em></h1>
             </div>
-         </div>
+        </div>
+    </div>
     <div id="container">
         <div class="url-shortner-div">
             <button class="myButton" onclick="redirectToPageUrlShortner()">OPEN TOOL</button>
         </div>
         <div class="imageResizer-div">
+            <div class="previewBox">Image Compressor</div>
             <button class="myButton" onclick="redirectToPageImageCompressor()">OPEN TOOL</button>
-        </div>        <div class="inner-div">Div 3 Content</div>
-        <div class="inner-div">Div 4 Content</div>
+        </div>
+        <div class="pngconverter-div">
+            <div class="previewBox">PNG Converter</div>
+            <button class="myButton" onclick="redirectToImageToPngConverter()">OPEN TOOL</button>
+        </div>
+        <div class="pngconverter-div">
+            <div class="previewBox">JPEG Converter</div>
+            <button class="myButton" onclick="redirectToImageToJpegConverter()">OPEN TOOL</button>
+        </div>
         <div class="inner-div">Div 5 Content</div>
     </div>
 </div>
-    <button id="prevButton" class="nav-button">Previous</button>
-    <button id="nextButton" class="nav-button">Next</button>
-    <script src="main.js"></script>
+<button id="prevButton" class="nav-button">Previous</button>
+<button id="nextButton" class="nav-button">Next</button>
+<script src="main.js"></script>
 </body>
 </html>
