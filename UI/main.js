@@ -22,8 +22,8 @@ function updateDivPositions() {
     }
 }
 
-function redirectToPageUrlShortner() {
-    window.location.href = 'URLShortner.html';
+function redirectToPageJsonFormator() {
+    window.location.href = 'jsonFormator.html';
 }
 function redirectToPageImageCompressor() {
     window.location.href = 'imageResizer.html';
