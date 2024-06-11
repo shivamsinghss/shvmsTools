@@ -100,6 +100,22 @@ body, html {
   position: absolute;
   transition: transform 0.7s ease-in-out;
 }
+
+.pngconverter-div {
+  /* background-image: url("https://img.icons8.com/?size=100&id=e8LSEtM3jsBL&format=png&color=000000");
+  background-size:contain; */
+  background-color: #cfa8c5;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transition: transform 0.7s ease-in-out;
+}
 .previewBox {
   font-family: Poetsen One;
   padding-bottom: 100px;

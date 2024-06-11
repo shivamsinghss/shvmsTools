@@ -35,7 +35,9 @@ function redirectToImageToPngConverter() {
 function redirectToImageToJpegConverter() {
     window.location.href = 'jpegconverter.html';
 }
-
+function redirectToxmljsonConverter() {
+    window.location.href = 'xmljsonconverter.html';
+}
 nextButton.addEventListener('click', goToNextDiv);
 prevButton.addEventListener('click', goToPrevDiv);
 

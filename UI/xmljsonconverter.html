@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON/XML Converter</title>
+    <link rel="stylesheet" href="xmljsonconverter.css">
+</head>
+<body>
+<div class="container">
+    <h1>JSON/XML Converter</h1>
+    <textarea id="inputText" placeholder="Enter JSON or XML here..."></textarea>
+    <div class="buttons">
+        <button onclick="convertJsonToXml()">Convert JSON to XML</button>
+        <button onclick="convertXmlToJson()">Convert XML to JSON</button>
+    </div>
+    <textarea id="outputText" placeholder="Converted output will appear here..."></textarea>
+    <button onclick="copyOutput()">Copy Output</button>
+</div>
+<script src="xmljsonconverter.js"></script>
+</body>
+</html>
